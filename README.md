@@ -1,5 +1,6 @@
 # symfony
-
+#### DATABASE ####
+Download in Database folder "blog" file
 ### EASYADMIN ###
 ## ROLE_ADMIN ##
 
