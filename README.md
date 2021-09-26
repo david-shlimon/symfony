@@ -1,8 +1,8 @@
 # symfony
-#### DATABASE ####
+## DATABASE ##
 Download in Database folder "blog" file
-### EASYADMIN ###
-## ROLE_ADMIN ##
+## EASYADMIN ##
+ROLE_ADMIN 
 
 Accounts : 
 email : admin@hotmail.fr
