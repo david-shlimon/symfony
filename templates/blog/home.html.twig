@@ -1,0 +1,41 @@
+{% include "./blog/header.html.twig" %}
+{% include "./blog/footer.html.twig" %}
+
+
+    {% block stylesheets %}
+ <link rel=stylesheet href="/bootstrap/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+
+          <link rel=stylesheet href="/css/style.css">
+         
+        
+        {% endblock %}
+<body>
+
+{% block header %}
+
+
+
+{% endblock %}
+</br>
+</br>
+<div class="container d-flex flex-column align-items-center">
+<h1> Bienvenue sur mon SKYBLOG </h1>
+</br>
+</br>
+<h2> N'hésitez pas à vous <a href="/register"> INSCRIRE </a>
+<h2> Ou à vous <a href="/login"> CONNECTER</a>  pour voir les articles et commenter ! </h2>
+
+
+</div>
+
+
+</body>
+
+<footer>
+{% block footer %}
+
+
+
+{% endblock %}
+
+</footer>

@@ -1,0 +1,45 @@
+   
+  {% extends 'base.html.twig' %}
+
+  {% block body %}
+
+  
+
+   <div class="container-fluid d-flex flex-column align-items-center ">
+      <a class=" btn btn-dark" href="/blog"> Retour</a>
+      </br>
+        <div class="row d-flex justify-content-evenly">
+
+              <div class="col-md-5 mb-8">
+              <div class="card" style="width: 22rem;">
+                <img class="card-img-top" src="{{post.artpic }}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{post.title}}</h5>
+                  <p class="card-text">{{post.arttext}}</p>
+                  <p>{{post.artdate | date("d/m/Y")}} </p>
+                </div>
+              </div>
+              </div>
+                 <div class="row justify-content-center">
+          <div class="col-md-5">
+          </br></br>
+          <h5> N'hésites pas à lacher ton COM !! <h5>
+          {{form(form)}}
+          </div>
+      </div>
+                      <div class="col-md-5 mb-4" >
+                       <h5> Vos commentaires : <h5>
+              {% for comment in post.comments %}
+               <div class="card" style="margin-bottom:20%;" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">{{comment.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{comment.createdAt | date("d/m/Y")}}</h6>
+                    <p class="card-text">{{comment.content}}</p>
+                    <p> {{comment.name}} </p>
+                </div>
+            </div>
+              {% endfor %}
+          </div>
+        </div>
+
+{% endblock %}

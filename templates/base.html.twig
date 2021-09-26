@@ -1,0 +1,54 @@
+{% include "./blog/header.html.twig" %}
+{% include "./blog/footer.html.twig" %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>{% block title %}MonBlog{% endblock %}</title>
+
+    
+
+        {% block stylesheets %}
+
+          <link rel=stylesheet href="/bootstrap/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+
+          <link rel=stylesheet href="/css/style.css">
+          <link rel=stylesheet href="/css/register.css">
+        
+        {% endblock %}
+
+    </head>
+
+    <body>
+  
+        {% block header %} {% endblock %}  
+</br>
+</br>
+
+        {% block body %}
+
+
+          
+
+        {% endblock %}
+</br>
+</br></br>
+</br>
+
+
+        {% block javascripts %}
+
+    </body>
+  
+
+<footer> 
+{% block footer %}
+
+            {% endblock %}
+</footer>
+            <script src="/bootstrap/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+        {% endblock %}
+</html>
